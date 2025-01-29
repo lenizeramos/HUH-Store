@@ -9,8 +9,7 @@ import Select from "@mui/material/Select";
 import CommonButton from "../components/CommonButton";
 import "../css/productDisp.css";
 import "rodal/lib/rodal.css";
-import { faAngleDown } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { ChevronDown } from "lucide-react";
 
 const DesireToFly = ({ sectionRef }) => {
   const dispatch = useDispatch();
@@ -122,7 +121,7 @@ const DesireToFly = ({ sectionRef }) => {
 
             <div className="btnContainer">
               <CommonButton
-                title={<FontAwesomeIcon icon={faAngleDown} />}
+                title={<ChevronDown />}
                 onClickHandler={scrollToShopSection}
               />
             </div>

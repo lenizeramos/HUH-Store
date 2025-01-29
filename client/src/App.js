@@ -100,6 +100,7 @@ function App() {
         })
         .catch((error) => {
           setServiceWorkerError(error);
+          console.log(serviceWorkerError);
         });
     }
   }, []);
@@ -195,7 +196,6 @@ function App() {
       </Routes>
       <Footer />
       <Toaster />
-      {serviceWorkerError && <p>Service Worker registration failed.</p>}
     </div>
   );
 }
